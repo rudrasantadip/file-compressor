@@ -1,0 +1,39 @@
+.heading1
+{
+    text-align: center;
+}
+
+.box
+{
+    display: flex;
+    flex-direction: column;
+}
+.main
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.utility
+{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.utility button
+{
+    margin-top: 12px;
+}
+
+.utility img
+{
+    border-radius: 90px;
+}
+
+tr th, tr td
+{
+    text-align: center;
+}

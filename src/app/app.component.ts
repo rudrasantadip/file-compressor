@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'file-compressor';
+
+  uploadFile()
+  {
+    alert('upload file');
+  }
+
+  mergeFile()
+  {
+    alert('merge file');
+  }
+
+  downloadFile()
+  {
+    alert('download file');
+  }
+
 }
