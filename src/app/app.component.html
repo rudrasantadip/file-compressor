@@ -11,57 +11,19 @@
         <img src="/assets/upload.png" alt="">
       </div>
       <div class="button m-3">
-        <span><button (click)="uploadFile()" class="btn btn-primary">Upload</button></span>
-      </div>
-    </div>
-  
-    <div class="utility">
-      <div class="icon">
-        <img src="/assets/compress.png" alt="">
-      </div>
-      <div class="button m-3">
-        <span><button (click)="mergeFile()" class="btn btn-primary">Compress</button></span>
-      </div>
-    </div>
-  
-    <div class="utility">
-      <div class="icon">
-        <div class="icon">
-          <img src="/assets/download.png" alt="">
-        </div>
-      </div>
-      <div class="button m-3">
-        <span><button (click)="downloadFile()" class="btn btn-primary">Download</button></span>
+        <input class="uploadfile" type="file" (change)="uploadFile($event)">
       </div>
     </div>
   </div>
 
-  <table class="table">
-    <thead>
-        <tr>
-            <th>File Name</th>
-            <th>Size (Uncompressed)</th>
-            <th>Size (Compressed)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>John Doe</td>
-            <td>30</td>
-            <td>USA</td>
-        </tr>
-        <tr>
-            <td>Jane Smith</td>
-            <td>25</td>
-            <td>Canada</td>
-        </tr>
-        <tr>
-            <td>Alice Johnson</td>
-            <td>35</td>
-            <td>UK</td>
-        </tr>
-    </tbody>
-</table>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{fileName}}</h5>
+      <p class="card-text">Uploaded Name: {{uploadedFile}}</p>
+      <p class="card-text">Compressed File: {{compressedFile}}</p>
+      <button (click)="compressFile()"  class=" btn btn-outline-success m-2">Compress</button>
+      <button (click)="downloadFile()" class="btn btn-outline-danger">Download</button>
+    </div>
   </div>
 </div>
 
